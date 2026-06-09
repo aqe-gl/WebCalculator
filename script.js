@@ -28,3 +28,25 @@ document.querySelector('.subtract').onclick = function () {
     let ans = parseInt(num1) - parseInt(num2);
     alert(ans);
 }
+
+document.querySelector('.multiply').onclick = function () {
+    let num1 = document.querySelector('.number1').value;
+    let num2 = document.querySelector('.number2').value;
+    let ans = parseInt(num1) * parseInt(num2);
+    console.log(ans, typeof(ans));
+    alert(ans);
+}
+
+document.querySelector('.divide').onclick = function () {
+    let num1 = document.querySelector('.number1').value;
+    let num2 = document.querySelector('.number2').value;
+    if (num1 === 0) {
+        if (num2 === 0) {
+            alert("Error! Division by zero is impossible.")
+        }
+    }
+    else {
+        let ans = parseInt(num1) / parseInt(num2);
+        alert(ans);
+    }
+}
